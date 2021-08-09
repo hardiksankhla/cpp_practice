@@ -71,6 +71,10 @@ void deleteNode(int n, node* &head){
     return; 
 }
 
+void deleteNodeAtHead(node* &head){}
+
+void deleteNodeAtTail(node* &head){}
+
 bool search(int n, node* head){
     node* temp = head;
     while (temp!=NULL)
