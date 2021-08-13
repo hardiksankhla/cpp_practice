@@ -3,6 +3,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+void resetVector(vector<int> &v){
+    for (int i = 0; i < v.size(); i++)
+    {
+        v[i] = 0;
+    }
+}
+
 int main(){
     int n,d;
     cin>>n;
@@ -55,9 +62,19 @@ int main(){
 
     sort(v.begin(), v.end());
 
-    cout<<"output of sorted vector with range : ";
+    cout<<"output of sorted vector : ";
     for(auto element : v){
         cout<<element<<" ";
+    }
+    cout<<endl;
+
+    resetVector(v);
+
+    cout<<"Output of reset vector : ";
+    for (int i = 0; i < v.size(); i++)
+    {
+        cout<<v[i]<<" ";
+
     }
     cout<<endl;
 
